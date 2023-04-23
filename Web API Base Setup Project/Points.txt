@@ -1,0 +1,39 @@
+Download Influx zip file
+Extract zip file
+Run file influxd.exe => For server run
+Open CMD in same dir
+Command influx to run cli for Influx operations
+
+
+Follow influx data manipulation commands
+
+
+
+Mesurements => Tables
+Node/Tag => Column/Field
+Point => Toupple
+Group of Records => Series
+
+
+
+
+### Start from here ###
+Create Django project:
+django-admin startproject <project Name>
+
+Create app
+python manage.py startapp <App Name>
+Download Pg-admin Postgress
+Update Settings file (ADD INSTALLED APPS)
+migrate => python maange.py makemigrations
+Create SQL table in database:
+python manage.py sqlmigrate <appName> <file name created in migrations folder>
+python manage.py migrate (Complete Migration)
+Register your model to the admin file
+Write code of views
+
+
+
+
+
+
