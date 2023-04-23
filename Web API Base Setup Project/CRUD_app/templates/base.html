@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epi Vision</title>
+</head>
+<body bgcolor="cyan">
+    <h3>Patient Add Page</h3>
+    <form action="add" method="post">
+    {% csrf_token %}
+
+
+        Enter patient Name: <input name="patient_name" type="text"> <br>
+        Enter patient Activity: <input name="patient_activity" type="text"> <br>
+        Enter patient Age: <input name="patient_age" type="number"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

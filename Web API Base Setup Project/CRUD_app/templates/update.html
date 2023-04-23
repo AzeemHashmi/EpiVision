@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epi Vision</title>
+</head>
+<body bgcolor="cyan">
+    <h3>Patient Update Page</h3>
+    <form  method="post" action="update" onsubmit="location.replace('http://127.0.0.1:8000/update/{{data.id}}'); return false;">
+    {% csrf_token %}
+
+
+        Enter patient Name: <input name="patient_name" type="text" value= {{data.name}} > <br>
+        Enter patient Activity: <input name="patient_activity" type="text" value="{{ data.activty }}"> <br>
+        Enter patient Age: <input name="patient_age" type="number" value="{{ data.age }}"><br>
+        <input type="submit"  value="Submit">
+    </form>
+
+    
+
+</body>
+</html>
